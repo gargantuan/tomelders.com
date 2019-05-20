@@ -1,0 +1,23 @@
+AddType text/html .shtml
+AddHandler server-parsed .shtml
+AddHandler server-parsed .html
+Options Indexes FollowSymLinks Includes
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ $1.html [L,QSA]
+
+# block referer spam semalt
+RewriteCond %{HTTP_REFERER} ^https?://([^.]+\.)*semalt\.com [NC]
+RewriteRule .* – [F]
+# end semalt block
+
+# block referer spam buttons for website
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} buttons\-for\-website\.com
+RewriteRule ^.* - [F,L]
+# End buttons for website block
+
+#ErrorDocument 404 /404.php
+Header add Access-Control-Allow-Origin "*"

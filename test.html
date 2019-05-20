@@ -1,0 +1,93 @@
+<html>
+	<head>
+		<title>Tests</title>
+	</head>
+	<body>
+	
+		<ul id="myMenu">
+		</ul>
+	</body>
+	
+	<script>
+	
+		function Shape(){
+			
+			var shape = this;
+			
+			shape.draw = function(){
+				console.log("Draw a shape");
+			}
+			
+			function privateMethod(){
+				console.log("Private method called");
+			}
+			
+			privateMethod();
+			
+		}
+		
+		var shape = new Shape();
+		shape.draw();
+		
+		//-------------------------------------------------------------------------------
+		
+		function Square(){
+			
+			var square = this;
+			
+			square.draw = function(){ console.log("Draw a square"); };
+			
+		}
+		
+		Square.prototype = new Shape();
+		
+		// extend shape
+		var square = new Square();
+		square.draw();
+		
+		
+		var data = [
+			{"item 1": "http://www.url1.com"},
+			{"item 2": "http://www.url2.com"},
+			{"item 3": "http://www.url3.com"},
+			{"item 4": "http://www.url4.com"},
+			{"item 5": "http://www.url5.com"}
+		];
+		
+		function buildList(data){
+			
+			var menu = document.getElementById("myMenu");
+			
+			for(var i in data){
+				
+				var li = document.createElement("li");
+				var a = document.createElement("a");
+				
+				for(var key in data[i]){
+					li.innerHTML = key;
+					a.href = data[i][key];
+				}
+				
+				a.appendChild(li);
+				menu.appendChild(a);
+				
+			}
+			
+		}
+		
+		buildList(data);
+		
+		
+		function test(){
+			
+			for(var i = 0; i < 5; ++1){
+				
+				
+				
+			}
+			
+		}
+		
+	</script>
+	
+</html>

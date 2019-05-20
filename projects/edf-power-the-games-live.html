@@ -1,0 +1,109 @@
+<!--#set var="PAGE_TITLE" value="EDF Power the Games Live"-->
+<!--#include virtual="_header.shtml"-->
+	
+	<div class="container first-element">
+		
+	  
+	  <div class="container-fluid first-element project-header">
+	  	<div class="row-fluid">
+	  		
+	  		<div class="span8 pull-right">
+	
+	  			<div class="poster-embed">
+		  			
+	  					<!-- for 3d, wrap this in a div to rotate -->
+	  					<div class="panel front">
+	  						<img src="/assets/hd/edf-ptg/header.jpg" alt="header" />
+	  						<button class="flip-button">Watch the video</button>
+	  					</div>
+	  					<div class="panel bottom">
+		  					<iframe src="http://player.vimeo.com/video/46431112?title=0&amp;byline=0&amp;portrait=0&amp;color=ea3700" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+						</div>
+
+ 	  			</div>
+ 	  			
+	  		</div>
+	  		
+	  		<div class="span3 project-outline">
+	  			<h1>EDF Power the games live</h1>	
+	  			<a class="project-link" href="http://www.edfpowerthegameslive.com">Visit website</a>
+	  			
+	  			<div class="project-meta">
+	  				<p class="description"><b>Description:</b><br /> Realtime energy monitoring for London 2012.</p>
+	  				<br />
+	  				<p class="client"><b>Client:</b> EDF Energy</p>
+	  				<p class="year"><b>Year:</b> 2012</p>
+	  				<br />
+	  				<p class="technologies"><b>Technologies:</b> HTML5, Javascript &amp; PHP</p>
+	  				<p class="platforms"><b>Platforms:</b> Web desktop &amp; mobile</p>
+	  			</div>			
+	  		</div>
+	  		
+	  
+	  			
+	  	</div>
+	  </div>
+	  
+	  <div class="container">
+	  	
+	  	<div class="row">
+		  	<div class="span12">
+		  		<div class="writeup">
+				<p>The London 2012 games promised to be the greenest games yet, and as the official energy supplier, EDF played an important role in delivering on that promise. EDF approached Applied Works to create a web interface allowing the public to view real time and historic energy usage at the olympic venues, Tower Bridge and the EDF London Eye. The solution had to work across all browsers and devices whilst still taking advantage of the latest HTML5 features to create a rich and dynamic user experience. </p>
+				
+				<p>Behind the scenes, the project takes real time energy data from smart meters at all the locations. Some locations were accessed via ethernet, others via GPRS resulting in varying levels of latency and data loss that had to be accounted for and repaired automatically in real time. </p>
+				
+				<p>In addition, there were several other data feeds such as weather, events and bridge lifts to be incorporated into the data set, each posing their own set of technical constraints and challenges. With three years of data aggregated into 5 minute intervals, we needed to implement our own caching system to dramatically reduce the amount of database queries and make efficient use of the single server hosting the project. 
+				
+				<p>With data coming in every minute, cron jobs were employed to keep averages up to date whilst keeping database queries to a level the server could handle during periods of heavy traffic.</p>
+				
+				<p>As technical director on this project, it was my job to create the initial prototype front-end and back-end. I then handled the implementation of the production back-end and co-ordinated the incoming data from several sources. I also developed the responsive and resolution independent front-end for mobile. </p>
+				
+				<p>EDF now offer a version of this project to their commercial customers, helping employees see the impact of their energy usage in realtime and to see the impact seasonal changes such as cold weather and rain has on a companies energy usage and carbon foot print. </p>  
+				
+				</div>
+		  	</div>
+	  	</div>
+	  		
+	  		
+	  		<ul class="thumbnails">
+			  	
+			  	<li class="span8">
+			  		<img src="/assets/hd/edf-ptg/dashboard.jpg" alt="dashboard" width="1540" height="1094">
+			  		<p class="caption">The dashboard provides an intuitive way for users to see energy usage in day, week, month and year view. The graph can also show contextual data such as rainfall or daylight hours over energy data.</p>
+			  	</li>
+			  	
+			  	<li class="span4">
+				  	<img src="/assets/hd/edf-ptg/homepage.jpg" alt="homepage" width="740" height="433">
+				  	<img src="/assets/hd/edf-ptg/story.jpg" alt="story" width="740" height="433">
+				  	<p class="caption">There are six venues to choose from across London, each with their own 'energy stories'.</p>
+			  	</li>
+			  	
+		  	</ul>
+	  	
+	  		<ul class="thumbnails">
+			  	
+			  	<li class="span4">
+				  	<img src="/assets/hd/edf-ptg/day-night.jpg" alt="day-night" width="740" height="388">
+				  	<p class="caption">The illustrations, created by Peter Grundy, change to reflect day and night as the user interacts with the graph.</p>
+			  	</li>
+			  	
+			  	<li class="span4">
+			  		<img src="/assets/hd/edf-ptg/event.jpg" alt="event" width="740" height="388">
+			  		<p class="caption">Event popovers provide context to help users understand the causes behind variations in energy usage.</p>
+			  	</li>
+			  	
+			  	<li class="span4">
+				  	<img src="/assets/hd/edf-ptg/mobile.jpg" alt="mobile" width="740" height="388">
+				  	<p class="caption">A flexible and resolution independent front end was created to mobile devices with smaller screens.</p>
+			  	</li>
+	  	
+	  		</ul>
+
+
+	  		
+	  </div>
+	  
+	  
+
+<!--#include virtual="_footer.shtml"-->

@@ -1,0 +1,26 @@
+	
+	.everything-else li {
+		background: rgba(0,0,0,1);
+		color: #fff;
+		border-radius: 4px;
+		overflow: hidden;
+		box-shadow: 0 0 3px rgba(0,0,0,0.5);
+	}
+	
+	.everything-else li p {
+		margin: 5px 10px;
+	}
+	
+	.everything-else img {
+		-webkit-filter: grayscale(1);
+		opacity: 0.8;
+		box-shadow: none;
+		border-bottom: rgba(0,0,0,0.5) 4px solid;
+		margin-bottom: 3px;
+		
+	}
+	
+	.everything-else li:hover img {
+		opacity: 1;
+		-webkit-filter: grayscale(0);
+	}

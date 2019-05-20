@@ -1,0 +1,130 @@
+<!--#set var="PAGE_TITLE" value="Times Infographics" -->
+<!--#include virtual="_header.shtml"-->
+	
+	<div class="container first-element">
+		
+	  
+	  <div class="container-fluid first-element project-header">
+	  	<div class="row-fluid">
+	  		
+	  		<div class="span8 pull-right">
+	
+	  			<div class="poster-embed">
+		  			
+	  					<!-- for 3d, wrap this in a div to rotate -->
+	  					<div class="panel front">
+	  						<img src="../assets/hd/times_infographics/header.png" alt="header" width="770" height="431" />
+	  						<button class="flip-button">Watch the video</button>
+	  					</div>
+	  					<div class="panel bottom">
+	  						<iframe src="http://player.vimeo.com/video/13761997?title=0&amp;byline=0&amp;portrait=0&amp;color=ea3700" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+						</div>
+
+ 	  			</div>
+ 	  			
+	  		</div>
+	  		
+	  		<div class="span3 project-outline">
+	  			<h1>The Times Infographics</h1>	
+	  			<a class="project-link" href="#">Read the case study</a>
+	  			
+	  			<div class="project-meta">
+	  				<p class="description"><b>Description:</b><br /> Interactive HTML5 infographics for iPad.</p>
+	  				<br />
+	  				<p class="client"><b>Client:</b> News International</p>
+	  				<p class="year"><b>Year:</b> 2010/11</p>
+	  				<br />
+	  				<p class="technologies"><b>Technologies:</b> HTML5, CSS3, SVG &amp; Javascript</p>
+	  				<p class="platforms"><b>Platforms:</b> Web desktop &amp; mobile</p>
+	  			</div>			
+	  		</div>
+	  		
+	  
+	  			
+	  	</div>
+	  </div>
+	  
+	  <div class="container">
+	  	
+	  	<div class="row">
+		  	<div class="span12">
+		  		<div class="writeup">
+				<p>When News International launched the iPad edition of the Times in 2010, they were eager to take advantage of the interactive, touch screen format to offer readers new ways to consume the news and better understand the stories. They approached Applied works who, over the course of 2010 and 2011, delivered several interactive projects that ran alongside key news items such as the World Cup, the Royal Wedding and the anniversary of the Battle of Britain.</p>
+				
+				<p>The first of these projects, The Health of England, is an intensely data rich news story that illustrates the radical differences between the North and South of England in terms of health and health care. Taking full advantage of iOS's WebKit framework, I helped Applied Works create an innovative touch based interface using advanced HTML5 & CSS3 features that were not widely available at the time in desktop browsers.</p> 
+				
+				<p>The iPad had not been launched in the UK at this point, and the only available test units were chained to a desk deep inside News Internationals head office. Ensuring that the iPad could handle the data and interface, alongside the actual iPad app it was running in, required some careful planning and design to keep memory and processing to an absolute minimum. </p>
+				
+				<p>All the info graphics are self contained HTML5/CSS3 &amp; Javascript displayed inside the Times app via a UIWebView. On one hand this provided us with access a lot of new and exciting features that weren't available in a desktop web environment, but each project also brought with it a unique set of technical challenges that had to be addressed. For example, the Times App itself used a lot of the devices built in memory; when we tested the Battle of Britain project on the device and inside the App, we found it kept crashing due to memory shortages. Javascript does not provide a way to monitor memory usage, and bugs in iOS's Javascript Engine meant we had to be creative with the way we loaded and unloaded images. </p>
+				
+				<p>Web Fonts were critical to ensuring The Times branding was communicated in a way that wasn't possible on desktops at the time. We worked very closely with the App development team to stay on top of changes to the App and to iOS that directly affected how UIWebViews access and display Web Fonts. Due to the way the App was built, we did not have access to events such as orientation changes and so we created our own implementation using CSS media queries.</p>
+				
+				<p>Our work with The Times went on to win awards from Design Week and a European Design Award for digital information design. The work was later ported to the web to provide additional content for readers behind the pay wall. Since the projects all made heavy use of advanced HTML5, CSS3 and Javascript features not widely available on the desktop, a whole new set of technical challenges had to be solved.</p>
+				
+				<p>The Times work is not easily available to view online, but you can find out more about this project on the <a href="http://www.appliedworks.co.uk/case-studies/the-times-supporting-the-paywall">Applied Works website.</a></p>
+				</div>
+		  	</div>
+	  	</div>
+	  		
+	  		
+	  		<ul class="thumbnails">
+			  	
+			  	<li class="span4">
+			  		<img src="../assets/hd/times_infographics/health-screen1.jpg" alt="health-screen1" width="740" height="971" />
+			  		<p class="caption">I used SVG and Javascript to implement a circular navigation suited to touch screen interfaces. Users can also click on the map to drill down to a specific region.</p>
+			  	</li>
+			  	
+			  	<li class="span4">
+				  	<img src="../assets/hd/times_infographics/health-yorks-humber.jpg" alt="health-yorks-humber" width="740" height="971" />
+			  		<p class="caption">The 'wheel' (or 'cheeseboard' as I call it) also served to provide an 'at a glance' over view of a regions performance by colour coding the individual wedges.</p>
+			  	</li>
+			  	
+			  	<li class="span4">
+				  	<img src="../assets/hd/times_infographics/health-southeast.jpg" alt="health-southeast" width="740" height="971" />
+			  		<p class="caption">The infographic was extremely successful at illustrating the differences between each region, but more specifically the differences between the north and south.</p>
+			  	</li>
+			  	
+		  	</ul>
+		  	
+		  	<ul class="thumbnails">
+			  	
+			  	<li class="span4">
+				  	<img src="../assets/hd/times_infographics/worldcup-1.jpg" alt="worldcup-1" width="740" height="540" />
+			  		<p class="caption">For the World Cup, we created an interactive wall chart. A digital version of the wall charts commonly featured in newspapers during a major footballing event.</p>
+			  	</li>
+			  	
+			  	<li class="span4">
+				  	<img src="../assets/hd/times_infographics/worldcup-2.jpg" alt="worldcup-2" width="740" height="540" />
+			  		<p class="caption">The wall chart was updated in real time with data from stats.com, so you could enjoy England's 4:1 defeat at the hands of Germany without a radio or television.</p>
+			  	</li>
+			  	
+			  	<li class="span4">
+				  	<img src="../assets/hd/times_infographics/worldcup-3.jpg" alt="worldcup-3" width="740" height="540" />
+			  		<p class="caption">Users could compare teams and 'flip' player cards to compare the stats for individual players. As with scores, player stats were updated in realtime. </p>
+			  	</li>
+			  	
+		  	</ul>
+		  	
+		  	<ul class="thumbnails">
+			  	
+			  	<li class="span4">
+				  	<img src="../assets/hd/times_infographics/battle-of-britain.jpg" alt="battle-of-britain" width="740" height="540" />
+			  		<p class="caption">The Times drew on their huge archive to create an interactive timeline of images and audio commemorating the anniversary of the Battle of Britain.</p>
+			  	</li>
+			  	
+			  	<li class="span4">
+				  	<img src="../assets/hd/times_infographics/bush.jpg" alt="bush" width="740" height="540" />
+			  		<p class="caption">To celebrate the end of George W. Bush's second and final term in office, The Times published another interactive timeline documenting his controversial tenure as President.</p>
+			  	</li>
+			  	
+			  	<li class="span4">
+				  	<img src="../assets/hd/times_infographics/ashes.jpg" alt="ashes" width="740" height="540" />
+			  		<p class="caption">I worked closely with the people behind Hake-Eye to help solve critical performance issues when porting their trajectory viewer from Flash to HTML5.</p>
+			  	</li>
+			  	
+		  	</ul>
+	  	
+	  		
+	  </div>
+	  
+	  <!--#include virtual="_footer.shtml"-->
