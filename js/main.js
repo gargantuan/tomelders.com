@@ -1,5 +1,4 @@
-
-// don't clutter the window object
+// If you're poking around in here, understand that all of this was written in 2012. 
 var TE = {};
 
 $(document).ready(function(){
@@ -18,11 +17,7 @@ $(document).ready(function(){
 	// enable 3d flip for screens larger than a phone
 	// iOS can't 3d transform iframes at this size
 	if( $(".poster-embed").length > 0 ){
-		if( Modernizr.csstransforms3d && screen.availWidth > 767 ){
-			
-			console.log("3d enabled");
-			
-			
+		if( Modernizr.csstransforms3d && screen.availWidth > 767 ){	
 			$(".poster-embed").wrapInner("<div class=\"flipper\">");
 			$(".poster-embed").addClass("flip3d").removeClass("poster-embed");
 			//
